@@ -20,5 +20,4 @@ class JReduxApp extends StatefulWidget {
 
 Jeddy.Init({
     app: new JReduxApp(),
-    root: document.getElementById("root")
 }).Reducers({ ...reducers });
