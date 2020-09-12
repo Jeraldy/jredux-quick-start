@@ -1,22 +1,21 @@
 import { createReducer } from "jeddy/jredux";
 
-const counterSlice = createReducer({
+const counterReducer = createReducer({
     name: 'counter',
-    initialState: { value: 0 },
+    initialState: { counter: 0 },
     reducers: {
-        increment: state => {
+        handleIncrement: (state) => {
             return {
-                value: state.value + 1
+                counter: state.counter + 1
             }
         },
-        decrement: state => {
+        handleDecrement: (state) => {
             return {
-                value: state.value - 1
+                counter: state.counter - 1
             }
-           
         }
     }
 })
 
-export const { reducer , actions } = counterSlice;
+export const { reducer, actions } = counterReducer;
 

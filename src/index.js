@@ -1,23 +1,15 @@
 import { Jeddy, StatefulWidget } from "jeddy";
-import reducers from './reducers/root';
+import reducers from './Reducers/index';
 import { updateState } from "jeddy/jredux";
 import App from "./App";
 
-class JReduxApp extends StatefulWidget {
-    constructor() {
-        super()
+class Main extends StatefulWidget {
+    constructor(props) {
+        super(props)
         return this.connect()
     }
-
-    componentDidMount() {
-        updateState(this)
-    }
-
-    render() {
-        return App()
-    }
+    componentDidMount() { updateState(this) }
+    render() { return App() }
 }
 
-Jeddy.Init({
-    app: new JReduxApp(),
-}).Reducers({ ...reducers });
+Jeddy.Init({ app: new Main({ reducers }) });
