@@ -1,4 +1,4 @@
-import { actions } from '../Reducers/Counter';
+import { actions } from '../reducers/counter';
 import Button from 'jeddy/dom/Button';
 import { dispatch } from 'jeddy/jredux';
 const { handleDecrement } = actions

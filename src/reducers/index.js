@@ -1,4 +1,4 @@
-import { reducer as counterReducer } from './Counter'
+import { reducer as counterReducer } from './counter'
 
 export default {
     counterReducer

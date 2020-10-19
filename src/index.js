@@ -1,5 +1,5 @@
 import { Jeddy, StatefulWidget } from "jeddy";
-import reducers from './Reducers/index';
+import reducers from './reducers/index';
 import { updateState } from "jeddy/jredux";
 import App from "./App";
 
