@@ -2,7 +2,7 @@ import Div from "jeddy/dom/Div";
 import Center from "jeddy/layouts/Center";
 import Row from "jeddy/layouts/Row";
 import Br from "jeddy/dom/Br";
-import RowAlignment from "jeddy/layouts/RowAlignment";
+import RowAlign from "jeddy/layouts/RowAlign";
 import Increment from "./Widgets/Increment";
 import Decrement from "./Widgets/Decrement";
 import { connect } from "jeddy/jredux";
@@ -23,7 +23,7 @@ const App = ({ counter }) => {
                 }),
                 Row({
                     children: [Increment(), Decrement()],
-                    align: RowAlignment.SpaceBetween
+                    align: RowAlign.SpaceBetween
                 })
             ]
         })
@@ -31,7 +31,7 @@ const App = ({ counter }) => {
 }
 
 const mapStateToProps = (state) => {
-    return { ...state.counterReducer }
+    return { ...state.RCounter }
 }
 
 export default connect(mapStateToProps)(App)

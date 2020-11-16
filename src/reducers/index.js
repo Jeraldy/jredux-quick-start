@@ -1,5 +1,3 @@
-import { reducer as counterReducer } from './counter'
+import { reducer as RCounter } from './counter'
 
-export default {
-    counterReducer
-}
+export default { RCounter }

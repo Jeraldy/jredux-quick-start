@@ -1,7 +1,7 @@
 import { createReducer } from "jeddy/jredux";
 
-const counterReducer = createReducer({
-    name: 'counter',
+const RCounter = createReducer({
+    name: 'RCounter',
     initialState: { counter: 0 },
     reducers: {
         handleIncrement: (state) => {
@@ -17,5 +17,5 @@ const counterReducer = createReducer({
     }
 })
 
-export const { reducer, actions } = counterReducer;
+export const { reducer, actions } = RCounter;
 
